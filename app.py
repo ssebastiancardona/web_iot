@@ -49,11 +49,7 @@ def update_contact(id):
         cur = mysql.connection.cursor()
         cur.execute('UPDATE contacts SET fullname = %s, email = %s, phone = %s WHERE id = %s', (fullname, email, phone, id))
         flash('Contact Updated Successfully')
-        print(id)
-        print(id)
         mysql.connection.commit()
-        print(id)
-        print(id)
         return redirect(url_for('index'))
 
 @app.route('/delete/<string:id>')

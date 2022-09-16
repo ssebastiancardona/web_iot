@@ -23,12 +23,47 @@
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 </head>
+<header class="background">
+    <div class="contenedor">
+        <div class="barra">
+            <a class="logo" href="/" src="/static/img/Logo.png" img="Logo">
+                <h1 class="logo__nombre no-margin centrar-texto"><img src="/static/img/Logo positivo.png" width="70"
+                        height="70" left alt=""> <span class="logo__bold">CALIDEZ</span></h1>
+            </a>
+
+            <nav class="navegacion">
+                <a href="/" class="navegacion__enlace">Inicio</a>
+                <a href="chimeneas.html" class="navegacion__enlace">Chimeneas</a>
+                <a href="192.168.1.200" class="navegacion__enlace">Control</a>
+                <a href="192.168.1.200/configuracion.html" class="navegacion__enlace">Configuracion</a>
+                <a href="contact_us" class="navegacion__enlace">Contactenos</a>
+            </nav>
+        </div>
+</header>
 
 <body>
 
     {% block body %}
 
     {% endblock %}
+
+    <footer class="footer background">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="/" src="/static/img/Logo.png" img="Logo">
+                    <h1 class="logo__nombre no-margin centrar-texto"><img src="/static/img/Logo positivo.png" width="70"
+                            height="70" left alt=""> <span class="logo__bold">CALIDEZ</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="/" class="navegacion__enlace">Inicio</a>
+                    <a href="chimeneas.html" class="navegacion__enlace">Chimeneas</a>
+                    <a href="192.168.1.200" class="navegacion__enlace">Control</a>
+                    <a href="192.168.1.200/configuracion.html" class="navegacion__enlace">Configuracion</a>
+                    <a href="contactenos.html" class="navegacion__enlace">Contactenos</a>
+                </nav>
+            </div>
+    </footer>
 
     <script src="/static/js/modernizr.js"></script>
     <script src="/static/js/main.js"></script>

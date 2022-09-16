@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calidez_Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="contenedor" style="background: radial-gradient(circle, rgba(197,159,20,1) 0%, rgba(103,11,11,1) 100%)">
+
+            <div class="barra">
+                <a class="logo" href="index.html" src="img/Logo" img="Logo">
+                    <h1 class="logo__nombre no-margin centrar-texto"><img src="img/Logo positivo.png" width="70"
+                            height="70" left alt=""> <span class="logo__bold"></span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="index.html" class="navegacion__enlace">Inicio</a>
+                    <a href="portafolio.html" class="navegacion__enlace">Chimeneas</a>
+                    <a href="Registro.html" class="navegacion__enlace">Registro</a>
+                    <a href="news.html" class="navegacion__enlace">Login</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="contenedor" style="width: 40%;">
+        <h3 class="centrar-texto" style="font-size: 50px">Acceder</h3>
+
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="row-md-6">
+                <label for="validationCustom03" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Ingrese su nombre o correo
+                </div>
+              </div>
+            <div class="row-md-6">
+              <label for="validationCustom03" class="form-label">Contraseña</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Escriba su contraseña
+              </div>
+            </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-danger btn-lg"  type="submit">Acceder</button>
+            </div>
+          </form>
+
+    </main>
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,57 +1,185 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calidez</title>
+    <meta name="description" content="Open Build">
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="About_us.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Para verificar si existen mensajes-->
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-    {% for message in messages %}
-    <p>{{ message }}</p>
-    {% endfor %}
-    {% endif %}
-    {% endwith %}
-    <!-- Para verificar si existen mensajes-->
 
+    <header class="header">
 
-    <form action="/add_contact" method="POST">
-        <input type="text" name="fullname" placeholder="Fullname">
-        <input type="text" name="phone" placeholder="Phone">
-        <input type="text" name="email" placeholder="Email">
-        <button type="submit">
-            Save
-        </button>
-    </form>
+        <div class="contenedor" style="background: radial-gradient(circle, rgba(197,159,20,1) 0%, rgba(103,11,11,1) 100%)">
 
-    <table>
-        <thead>
-            <tr>
-                <td>Fullname</td>
-                <td>Phone</td>
-                <td>Email</td>
-                <td>Operations</td>
-            </tr>
-        </thead>
-        <tbody>
-            {% for contact in contacts %}
-            <tr>
-                <td>{{ contact.1 }}</td>
-                <td>{{ contact.2 }}</td>
-                <td>{{ contact.3 }}</td>
-                <td>
-                    <a href="/edit/{{contact.0}}">Edit</a>
-                    <a href="/delete/{{contact.0}}">Delete</a>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+            <div class="barra">
+                <a class="logo" href="index.html" src="img/Logo" img="Logo">
+                    <h1 class="logo__nombre no-margin centrar-texto"><img src="img/Logo positivo.png" width="70"
+                            height="70" left alt=""> <span class="logo__bold"></span></h1>
+                </a>
 
+                <nav class="navegacion">
+                    <a href="index.html" class="navegacion__enlace">Inicio</a>
+                    <a href="portafolio.html" class="navegacion__enlace">Chimeneas</a>
+                    <a href="registro.html" class="navegacion__enlace">Registro</a>
+                    <a href="login.html" class="navegacion__enlace">Login</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="text-home">
+        <div class="container-text">
+            <h4 class="no-margin">¡Hacemos realidad tu idea! </h4>
+            <h2 class="no-margin">Enciende el calor de tu hogar</h2>
+            <h3 class="parragraf-home">Analizamos cada espacio, entendemos tu necesidad y entregamos un producto con los más
+                altos estándares de calidad,
+                eficiencia y seguridad. </br></br></br>Fáciles de operar y fáciles de disfrutar. </h3>
+        </div>
+    </div>
+
+    <div class="contenido-principal">
+        <div class="texto-descriptivo">
+            <h2 class="no-margin">Dale un toque especial, un ambiente cálido, un diseño único y personalizado a tu hogar</h2>
+        </div>
+
+    <div class="carrusel">
+        <div class="carrusel-items">
+            <div class="carrusel-item">
+                <img src="img/logo.png" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel1.jpeg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel2.jpeg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel3.jpeg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel4.jpeg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel5.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel6.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel7.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel8.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel9.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel10.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel11.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel12.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel13.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel14.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel15.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel16.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel17.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel18.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel19.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel20.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel21.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel22.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel23.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel24.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel25.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel26.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel27.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel28.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel29.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel30.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel31.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel32.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel33.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel34.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel35.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="img/carrusel36.jpg" alt="" />
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script src="js/modernizr.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

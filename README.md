@@ -1,6 +1,6 @@
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
-  - [General Inf](#general-inf)
+ - [General Inf](#general-inf)
 - [Technologies](#technologies)
 - [Installation and run](#installation-and-run)
 - [Authors](#authors)

@@ -14,10 +14,17 @@ mysql = MySQL(app)
 app.secret_key = 'mysecretkey'
 @app.route('/')
 def index():
-    cur = mysql.connection.cursor()
-    cur.execute('SELECT * FROM contacts')
-    data = cur.fetchall()
-    return render_template('index.html', contacts = data)
+    #cur = mysql.connection.cursor()
+    #cur.execute('SELECT * FROM contacts')
+    #data = cur.fetchall()
+    return render_template('index2.html')
+
+@app.route('/chimeneas.html')
+def chimeneas():  
+    return render_template('chimeneas.html')
+
+
+
 
 @app.route('/add_contact', methods=['POST'])
 def add_contact():

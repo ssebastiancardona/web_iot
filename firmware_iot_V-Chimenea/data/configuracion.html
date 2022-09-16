@@ -10,28 +10,67 @@
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
+<header class="background">
+  <div class="contenedor">
+    <div class="barra">
+      <a class="logo" href="/" src="Logo_positivo" img="Logo">
+        <h1 class="logo__nombre no-margin centrar-texto"><img src="/static/img/Logo positivo.png" width="70" height="70"
+            left alt=""> <span class="logo__bold">CALIDEZ</span></h1>
+      </a>
+
+      <nav class="navegacion">
+        <a href="/" class="navegacion__enlace">Inicio</a>
+        <a href="chimeneas.html" class="navegacion__enlace">Chimeneas</a>
+        <a href="192.168.1.200" class="navegacion__enlace">Control</a>
+        <a href="192.168.1.200/configuracion.html" class="navegacion__enlace">Configuracion</a>
+        <a href="contactenos.html" class="navegacion__enlace">Contactenos</a>
+      </nav>
+    </div>
+  </div>
+
+</header>
+
 <body>
   <div class="topnav">
     <h1>Configuracion Chimenea</h1>
-  </div>  
+  </div>
 
   <div class="content">
     <div class="card-grid">
       <div class="card">
         <p class="card-title"><i class="fas fa-lightbulb"></i>Parametros de Configuracion</p>
-        <p>Medicion sensor de llama  <span id='rand'>-</span></p>
-        <p>Sensor de llama fijado en  <span id='sensorVal'>-</span></p>
-        <input type="text" id="SENSOR_TEXTO" style="width:auto" >
-        <input type="submit" id="BTN_LLAMA" value="Ajs Llama"  >
+        <p>Medicion sensor de llama <span id='rand'>-</span></p>
+        <p>Sensor de llama fijado en <span id='sensorVal'>-</span></p>
+        <input type="text" id="SENSOR_TEXTO" style="width:auto">
+        <input type="submit" id="BTN_LLAMA" value="Ajs Llama">
         </p>
         <p>
-        <p>Temperatura Actual  <span id='temp'>-</span></p>
-        <p>Temperatura fijada en:  <span id='tempVal'>-</span></p>
+        <p>Temperatura Actual <span id='temp'>-</span></p>
+        <p>Temperatura fijada en: <span id='tempVal'>-</span></p>
         <input type="text" id="TEMP_TEXTO" style="width:auto; ">
         <input type="submit" id='BTN_TEMP' value="Ajs Temp">
       </div>
     </div>
   </div>
+
+  <footer class="background">
+    <div class="contenedor">
+      <div class="barra">
+        <a class="logo" href="/" src="/static/img/Logo.png" img="Logo">
+          <h1 class="logo__nombre no-margin centrar-texto"><img src="/static/img/Logo positivo.png" width="70"
+              height="70" left alt=""> <span class="logo__bold">CALIDEZ</span></h1>
+        </a>
+
+        <nav class="navegacion">
+          <a href="/" class="navegacion__enlace">Inicio</a>
+          <a href="chimeneas.html" class="navegacion__enlace">Chimeneas</a>
+          <a href="192.168.1.200" class="navegacion__enlace">Control</a>
+          <a href="192.168.1.200/configuracion.html" class="navegacion__enlace">Configuracion</a>
+          <a href="contactenos.html" class="navegacion__enlace">Contactenos</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
 
   <script src="js2.js"></script>
 </body>

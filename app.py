@@ -4,11 +4,11 @@ from flask_mysqldb import MySQL
 app = Flask(__name__)
 
 #Connection mysql
-app.config['MYSQL_HOST'] = '127.0.0.1'
-app.config['MYSQL_USER'] = 'web_iot'
-app.config['MYSQL_PASSWORD'] = '123456'
-app.config['MYSQL_DB'] = 'flaskcontacts'
-mysql = MySQL(app)
+#app.config['MYSQL_HOST'] = '127.0.0.1'
+#app.config['MYSQL_USER'] = 'web_iot'
+#app.config['MYSQL_PASSWORD'] = '123456'
+#app.config['MYSQL_DB'] = 'flaskcontacts'
+#mysql = MySQL(app)
 
 # settings
 app.secret_key = 'mysecretkey'
